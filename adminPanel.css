@@ -110,12 +110,23 @@ body{
   grid-template-areas:
     'Sidebar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar'
     'Sidebar body body body body body body body body body'
-    'Sidebar body body body body body body body body body'
-    
-    ;
-    
-   
+    'Sidebar body body body body body body body body body';
     }
+
+@media only screen and (max-width: 768px){
+    .Sidebar{
+        display: none;
+    }
+    .grid-container {
+        grid-template-areas:
+    ' Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar Top-Bar'
+    ' body body body body body body body body body'
+    'body body body body body body body body body';
+    }
+    
+
+
+}
 /* .grid-container > div {
   
   text-align: center;
